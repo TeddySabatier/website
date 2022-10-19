@@ -1,0 +1,322 @@
+@import './colors.css';
+@import './font.css';
+/* Scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--light-outlight);
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--heavy-background);
+    border-radius: 10px;
+}
+  
+/* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+    background: var(--heavy-outlight);
+}
+html {
+    overflow-y:scroll;
+}
+/* Titles */
+h1 {
+    padding-left: 1%;
+    color: var( --heavy-outlight);
+    font-family: var(--font-family);
+}
+
+h2{
+    padding-left: 1.5%;
+    color:var(--heavy-background);
+    font-family: var(--font-family);
+}
+h3{
+    padding-left: 2%;
+    color:var(--heavy-outlight);
+    font-family: var(--font-family);
+}
+/* Text */
+a{
+    color:var(--heavy-background);
+    font-family: var(--font-family);
+    font-size: var(--font-size-text);
+}
+p{
+    color:var(--heavy-background);
+    font-family: var(--font-family);
+    font-size: var(--font-size-text);
+}
+label{
+    color:var(--heavy-background);
+    font-weight: bold;
+    font-family: var(--font-family);
+}
+.Text{
+    margin: 2%;
+    padding: 1%;
+    background-color: var(--light-outlight);
+    border-radius: 10px;
+    border-color: var(--heavy-background);
+
+}
+body{
+    caret-color: rgba(0,0,0,0);;
+    cursor: default;
+    background-color: var(--light-background);
+    overflow: hidden;    
+}
+
+
+#Expandable_section{
+    
+    justify-content: space-evenly;
+    transition: all .5s ease-in-out;
+    background: linear-gradient(to right,var(--heavy-background),var(--light-background));
+}
+#Expandable_section h1{
+    flex:1;
+}
+#Expandable_section div{
+    flex:1;
+}
+#Expandable_section:hover{
+    transform: translate(5%,0%) scale(1.1);
+    background: linear-gradient(to right,var(--heavy-background) 70%,var(--light-background));
+}
+.arrow{
+    align-items: center;
+    transform: translate(0%,50%);
+}
+.arrow span{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-bottom: 5px solid var(--light-outlight);
+    border-right: 5px solid var(--light-outlight);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+  
+#short_resume{
+    flex: 1 1 0px;
+}
+#short_presentation{
+}
+.rounded_image{
+    border-radius: 10px;
+    max-height: 50vh;
+    max-width: 50vw;
+}
+#row_spacebetween{
+    display: flex;
+    justify-content: space-evenly;
+}
+img{
+    max-width: 100%;
+    justify-self: center;
+    align-self: center;
+}
+/* Footer */
+footer{
+    background-color: var(--heavy-background);
+    overflow: hidden;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.information{
+    transition: all .2s ease-in-out; 
+    color: var(--light-outlight);
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 1%;
+}
+#contain_contact{
+    margin-right: 1%;
+}
+/* Header */
+
+header{
+    width: 100%;
+    position: fixed;
+    top:0;
+    background-color: var(--light-outlight);
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    min-height: 30px;
+    z-index: 99;
+}
+header:hover{
+    opacity: 1;
+}
+#under_header{
+    padding-top: 30px;
+}
+
+#contains_fast_internal_links{
+    display: flex;
+    justify-content: center;
+    flex: 80%;
+}
+.fast_internal_link {
+    margin-left: 3%;
+    margin-right: 3%;
+    transition: all .2s ease-in-out;
+}
+.fast_internal_link a{
+    padding: 2%;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 8px;
+}
+#theme_picker{
+    margin-left: 3%;
+    margin-right: 10px;
+    transition: all .2s ease-in-out; 
+}
+#theme_picker a{
+    padding: 2%;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 8px;
+}
+
+.rounds {
+    width: 10px;
+    height: 10px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius:  50%;
+    border-radius:  50%;
+    margin: 2%;
+    align-self: center;
+}
+.light_background{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    padding: 2px;
+    margin-left: 2px;
+}
+#round1{
+    background-color: var(--light-background);
+}
+#round2{
+    background-color: var(--heavy-background);
+}
+#round3{
+    background-color: var(--light-outlight);
+}
+#round4{
+    background-color: var(--heavy-outlight);
+}
+
+#round1{
+    background-color: var(--light-background);
+}
+#round2{
+    background-color: var(--heavy-background);
+}
+#round3{
+    background-color: var(--light-outlight);
+}
+#round4{
+    background-color: var(--heavy-outlight);
+}
+
+.information:hover{
+    transform: translate(5%,0%) scale(1.1);
+    background-color: var(--heavy-background);
+}
+.fast_internal_link:hover{
+    transform: translate(5%,0%) scale(1.1);
+}
+.fast_internal_link:hover a{
+    background-color: var(--heavy-background);
+    color: var(--light-outlight);
+}
+#theme_picker:hover{
+    transform: translate(5%,0%) scale(1.1);
+}
+#theme_picker:hover a{
+    background-color: var(--heavy-background);
+    color: var(--light-outlight);
+}
+#themepicker{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+/* Utilitary */
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.centered_text{
+    align-self: center;
+    padding: 1%;
+}
+
+.row_to_column{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.restrict_50per_max{
+    align-self: center;
+    flex:1;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+.row_to_column_reverse{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+@media only screen and (max-width: 600px) {
+    .row_to_column{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .row_to_column_reverse{
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .row_to_column_reverse img{
+        max-width: 100%;
+    }
+}

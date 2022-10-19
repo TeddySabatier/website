@@ -1,0 +1,13 @@
+:root {
+    --light-outlight: #6f939a;
+    --heavy-outlight: #000000;
+    --light-background:#7a7a7a;
+    --heavy-background: #F7F7F7;
+    --fade-background:#979797;
+}
+:root.dark {
+    --light-outlight: #FAE6B1;
+    --heavy-outlight: #FFA101;
+    --light-background: #B3DEE5;
+    --heavy-background: #31525B;
+}
