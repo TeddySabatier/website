@@ -1,3 +1,7 @@
+#This project is a simple one page website to present myself shortly and use some animations
+
+##Feel free to branch from it an see how it renders.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
