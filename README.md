@@ -1,6 +1,6 @@
-#This project is a simple one page website to present myself shortly and use some animations
+# This project is a simple one page website to present myself shortly and use some animations
 
-##Feel free to branch from it an see how it renders.
+## Feel free to branch from it an see how it renders.
 
 # Getting Started with Create React App
 
